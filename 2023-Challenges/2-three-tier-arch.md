@@ -1,1 +1,3 @@
-[3-Tier-Architecture](https://github.com/xavyaly/3-tier-architecture)
+[3-Tier-Architecture](https://github.com/jaabanks/3-tier-architecture)
+
+

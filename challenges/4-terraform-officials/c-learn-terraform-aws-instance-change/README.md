@@ -11,3 +11,5 @@ $ terraform apply --auto-approve
 $ terraform show
 $ terraform state list
 $ terraform destroy --auto-approve
+
+# It will re-create the new instance with the different AMI ID

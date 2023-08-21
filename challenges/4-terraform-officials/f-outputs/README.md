@@ -1,5 +1,7 @@
 # Execute the below commands
 
+[Link](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-outputs)
+
 $ terraform init
 
 $ terraform fmt
@@ -164,7 +166,7 @@ $ aws ec2 describe-instances --query "Reservations[*].Instances[*].{Instance:Ins
 ]
 ```
 
-# Create the output.tf files and execute the below commands
+# Create the output.tf file and execute the apply command again
 
 $ terraform apply --auto-approve
 

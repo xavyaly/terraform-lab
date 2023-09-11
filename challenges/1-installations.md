@@ -13,12 +13,23 @@
 [Link](https://docs.aws.amazon.com/cli/v1/userguide/install-linux.html)
 
 
-# Step-4: Create Access and Secret Key for your AWS Account
+# Step-4: Configure AWS CLI:
+
+```
+$ aws --version
+$ aws configure 
+AWS Access Key ID [****************5V7G]: 
+AWS Secret Access Key [****************MF1Y]: 
+Default region name [us-east-2]:             
+Default output format [json]: 
+```
+
+# Step-5: Create Access and Secret Key for your AWS Account
 
 [Link](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)
 
 
-# Step-4: Install any version of terraform 
+# Step-6: Install any version of terraform 
 
 [URL](https://releases.hashicorp.com/terraform/)
 

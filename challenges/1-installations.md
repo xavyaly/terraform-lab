@@ -9,6 +9,7 @@
 
 '''
 chmod 400 *.pem
+22 ssh port should be enabled
 '''
 
 # Step-3: Download AWS CLI 

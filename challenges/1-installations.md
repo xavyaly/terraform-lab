@@ -7,6 +7,9 @@
 
 [Link](https://aws.amazon.com/getting-started/hands-on/launch-connect-to-amazon-ec2-mac-instance/)
 
+'''
+chmod 400 *.pem
+'''
 
 # Step-3: Download AWS CLI 
 

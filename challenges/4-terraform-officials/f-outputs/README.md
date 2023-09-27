@@ -151,6 +151,12 @@ aws_instance.app_server: Still creating... [40s elapsed]
 aws_instance.app_server: Creation complete after 48s [id=i-0a436cc46775e4240]
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+instance_id = "i-00bb95a7a8bd47d64"
+instance_private_ip = "172.31.21.163"
+instance_public_ip = "35.167.209.6"
 ```
 
 $ aws ec2 describe-instances --query "Reservations[*].Instances[*].{Instance:InstanceId}"

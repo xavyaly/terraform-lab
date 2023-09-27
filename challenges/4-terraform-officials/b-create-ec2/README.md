@@ -398,3 +398,8 @@ aws_instance.web_server: Destruction complete after 32s
 
 Destroy complete! Resources: 1 destroyed.
 ```
+
+# Cleaning
+```
+$ rm -rf .terraform terraform.tfstate terraform.tfstate.backup 
+```

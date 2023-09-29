@@ -1,5 +1,23 @@
 # Execution: chatGPT
 
+# Execution Steps:
+
+$ terraform init
+```
+$ terraform init
+
+Initializing the backend...
+╷
+│ Error: Failed to get existing workspaces: S3 bucket does not exist.
+│ 
+│ The referenced S3 bucket must have been previously created. If the S3 bucket
+│ was created within the last minute, please wait for a minute or two and try
+│ again.
+│ 
+│ Error: NoSuchBucket: The specified bucket does not exist
+│       status code: 404, request id: JHBJXZM77A779YJQ, host id: 20yQCgIljuY/CjY4xGeVagGi+gyCRSrx5rEvFMyMgEGR/CAHEZa1fR6QHAyVHbjGtOj9JUcFCuDzskJt0x2LmQ==
+```
+
 # SCENARIO
 ```
 1. Created an s3 bucket through CLI
@@ -30,7 +48,6 @@ $ terraform init -debug             # to debug the tf code
 
 
 $ terraform init
-
 ```
 $ terraform init
 
@@ -215,6 +232,24 @@ Note: You didn't use the -out option to save this plan, so Terraform can't guara
 if you run "terraform apply" now.
 ```
 
+$ terraform apply 
+```
+$ terraform apply 
+Acquiring state lock. This may take a few moments...
+╷
+│ Error: Error acquiring the state lock
+│ 
+│ Error message: 2 errors occurred:
+│       * ResourceNotFoundException: Requested resource not found
+│       * ResourceNotFoundException: Requested resource not found
+│ 
+│ 
+│ 
+│ Terraform acquires a state lock to protect the state from being written
+│ by multiple users at the same time. Please resolve the issue above and try
+│ again. For most commands, you can disable locking with the "-lock=false"
+│ flag, but this is not recommended.
+```
 
 $ terraform apply "-lock=false" --auto-approve
 
@@ -594,6 +629,15 @@ Do you really want to force-unlock?
   Enter a value: yes
 
 Failed to unlock state: failed to retrieve lock info: ResourceNotFoundException: Requested resource not found
+```
+
+$ aws s3 ls
+```
+$ aws s3 ls
+2023-07-06 10:39:17 knowledgeadda1
+2023-07-01 14:17:49 learnzone
+2023-09-29 16:13:57 my-terraform-state-buckets
+2023-08-09 16:08:34 unique-bucket-09082023
 ```
 
 

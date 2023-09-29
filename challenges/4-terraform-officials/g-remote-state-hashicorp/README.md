@@ -1,3 +1,4 @@
+
 # Terraform commands
 
 [Link](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-remote)
@@ -127,10 +128,23 @@ aws_instance.app_server: Creation complete after 47s [id=i-0fb85ee7620fd84a7]
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 
+# Till here we already completed from previous scenarios 
+
+
+# Terraform cloud
+[TFC](https://developer.hashicorp.com/terraform/tutorials/cloud-get-started/cloud-sign-up)
+
+
 # Set Up Terraform Account
-[Link](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-remote)
+[TFC](https://app.terraform.io/public/signup/account?_gl=1*1wd7xpq*_ga*NTg0MzY2MDg4LjE2OTQ0MTQzODQ.*_ga_P7S46ZYEKW*MTY5NTk4MjE1MS4xLjAuMTY5NTk4MjE1MS42MC4wLjA.&ajs_aid=5dabe22d-6eff-42b8-82ae-04c36cece334&product_intent=terraform)
+
+% [Link](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-remote)
 
 
+# Execute the below and type yes 
+
+$ terraform login
+```
 $ terraform login
 Terraform will request an API token for app.terraform.io using your browser.
 
@@ -142,7 +156,7 @@ Do you want to proceed?
   Only 'yes' will be accepted to confirm.
 
   Enter a value: yes
-
+```
 
 ---------------------------------------------------------------------------------
 
@@ -165,7 +179,6 @@ Token for app.terraform.io:
 
 
 Retrieved token for user xavyaly
-
 
 ---------------------------------------------------------------------------------
 
